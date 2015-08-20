@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+
+<form action="ShowRequestHeaders" method="post">
+<!-- hidden input to let servlet know which form was used -->
+        <input type="hidden" name="hiddenAction" value="postFormExample">
+
+        <label>Email:</label>
+        <input type="email" name="email" required value="bart@fox.net"><br>
+
+        <label>First Name:</label>
+        <input type="text" name="firstName" required value="Bart"><br>
+
+        <label>Last Name:</label>
+        <input type="text" name="lastName" required value="Simpson"><br>
+
+        <label>&nbsp;</label>
+        <input type="submit" value="Join Now" id="submit">
+    </form>
+    
+    <p>
+    <form action="ShowRequestHeaders" method="get">
+<!-- hidden input to let servlet know which form was used -->
+        <input type="hidden" name="hiddenAction" value="getformExample">
+
+        <label>Email:</label>
+        <input type="email" name="email" required value="bart@fox.net"><br>
+
+        <label>First Name:</label>
+        <input type="text" name="firstName" required value="Bart"><br>
+
+        <label>Last Name:</label>
+        <input type="text" name="lastName" required value="Simpson"><br>
+
+        <label>&nbsp;</label>
+        <input type="submit" value="Join Now" id="submit">
+    </form>
+    
+    
+    
+</body>
+</html>
